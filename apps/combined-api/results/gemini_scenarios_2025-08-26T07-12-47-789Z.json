@@ -1,0 +1,114 @@
+{
+  "scenarios": [
+    {
+      "id": "scenario_1",
+      "name": "Successful Login",
+      "description": "Verify a successful login with valid credentials.",
+      "steps": [
+        {
+          "action": "goto",
+          "target": "https://www.amazon.com/",
+          "data": null,
+          "description": "Navigate to Amazon's homepage"
+        },
+        {
+          "action": "click",
+          "target": "#nav-link-accountList",
+          "data": null,
+          "description": "Click on the 'Account & Lists' link"
+        },
+        {
+          "action": "click",
+          "target": "#ap_email",
+          "data": null,
+          "description": "Click into the email field (to ensure it's active for the next step)"
+        },
+        {
+          "action": "fill",
+          "target": "#ap_email",
+          "data": "f20221142",
+          "description": "Enter the username"
+        },
+        {
+          "action": "click",
+          "target": "#continue",
+          "data": null,
+          "description": "Click 'Continue'"
+        },
+        {
+          "action": "fill",
+          "target": "#ap_password",
+          "data": "23",
+          "description": "Enter the password"
+        },
+        {
+          "action": "click",
+          "target": "#signInSubmit",
+          "data": null,
+          "description": "Click 'Sign-in'"
+        },
+        {
+          "action": "expect",
+          "target": "#nav-link-accountList span",
+          "data": "f20221142",
+          "description": "Verify that the username is displayed in the account menu"
+        }
+      ]
+    },
+    {
+      "id": "scenario_2",
+      "name": "Failed Login - Incorrect Password",
+      "description": "Verify an unsuccessful login attempt due to an incorrect password.",
+      "steps": [
+        {
+          "action": "goto",
+          "target": "https://www.amazon.com/",
+          "data": null,
+          "description": "Navigate to Amazon's homepage"
+        },
+        {
+          "action": "click",
+          "target": "#nav-link-accountList",
+          "data": null,
+          "description": "Click on the 'Account & Lists' link"
+        },
+        {
+          "action": "click",
+          "target": "#ap_email",
+          "data": null,
+          "description": "Click into the email field (to ensure it's active for the next step)"
+        },
+        {
+          "action": "fill",
+          "target": "#ap_email",
+          "data": "f20221142",
+          "description": "Enter the username"
+        },
+        {
+          "action": "click",
+          "target": "#continue",
+          "data": null,
+          "description": "Click 'Continue'"
+        },
+        {
+          "action": "fill",
+          "target": "#ap_password",
+          "data": "wrongpassword",
+          "description": "Enter an incorrect password"
+        },
+        {
+          "action": "click",
+          "target": "#signInSubmit",
+          "data": null,
+          "description": "Click 'Sign-in'"
+        },
+        {
+          "action": "expect",
+          "target": "div[data-test='error-message']",
+          "data": null,
+          "description": "Verify that an error message is displayed (this selector needs to be adjusted to match Amazon's actual error message selector)"
+        }
+      ]
+    }
+  ]
+}

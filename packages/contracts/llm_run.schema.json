@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LLM Run Output Schema",
+  "description": "Schema for LLM-generated test scenarios output",
+  "type": "object",
+  "required": ["runId", "outputs"],
+  "properties": {
+    "runId": {
+      "type": "string",
+      "description": "Unique run identifier"
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["scenario"],
+        "properties": {
+          "scenario": {
+            "type": "object",
+            "required": ["id", "name", "steps"],
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "Unique scenario identifier"
+              },
+              "name": {
+                "type": "string",
+                "description": "Human-readable scenario name"
+              },
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["action", "target", "description"],
+                  "properties": {
+                    "action": {
+                      "type": "string",
+                      "enum": ["goto", "fill", "click", "expect", "wait", "type", "select", "hover"],
+                      "description": "Action to perform"
+                    },
+                    "target": {
+                      "type": "string",
+                      "description": "Target selector or text"
+                    },
+                    "data": {
+                      "type": ["string", "null"],
+                      "description": "Data to input (for fill, type actions)"
+                    },
+                    "description": {
+                      "type": "string",
+                      "description": "Human-readable step description"
+                    }
+                  }
+                }
+              },
+              "timeTakenToCompile": {
+                "type": "string",
+                "description": "Time taken to compile the scenario"
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Tags for categorizing scenarios"
+              }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "generatedAt": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string",
+          "description": "LLM model used"
+        },
+        "totalTime": {
+          "type": "string",
+          "description": "Total generation time"
+        }
+      }
+    }
+  }
+}

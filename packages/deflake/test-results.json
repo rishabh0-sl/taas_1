@@ -1,0 +1,1514 @@
+{
+  "config": {
+    "configFile": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/playwright.config.ts",
+    "rootDir": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/src/setup/global-setup.ts",
+    "globalTeardown": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/src/setup/global-teardown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "flakinessDetection": {
+        "enabled": true,
+        "patternDetection": true,
+        "rootCauseAnalysis": true,
+        "selectorStability": true,
+        "trendAnalysis": true,
+        "correlationAnalysis": true,
+        "mlPatternDetection": true
+      },
+      "actualWorkers": 7
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/src/reporters/mcpReporter.ts",
+        {
+          "outputFile": "flakiness-report.json",
+          "enableFlakinessDetection": true,
+          "enableRootCauseAnalysis": true,
+          "enableSelectorStability": true,
+          "enablePatternDetection": true,
+          "enableTrendAnalysis": true
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "flakinessDetection": {
+            "enabled": true,
+            "patternDetection": true,
+            "rootCauseAnalysis": true,
+            "selectorStability": true,
+            "trendAnalysis": true,
+            "correlationAnalysis": true,
+            "mlPatternDetection": true
+          },
+          "actualWorkers": 7
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "flakinessDetection": {
+            "enabled": true,
+            "patternDetection": true,
+            "rootCauseAnalysis": true,
+            "selectorStability": true,
+            "trendAnalysis": true,
+            "correlationAnalysis": true,
+            "mlPatternDetection": true
+          },
+          "actualWorkers": 7
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "flakinessDetection": {
+            "enabled": true,
+            "patternDetection": true,
+            "rootCauseAnalysis": true,
+            "selectorStability": true,
+            "trendAnalysis": true,
+            "correlationAnalysis": true,
+            "mlPatternDetection": true
+          },
+          "actualWorkers": 7
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.55.0",
+    "workers": 7,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "amazon.spec.ts",
+      "file": "amazon.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Amazon Website Tests",
+          "file": "amazon.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "search for products on Amazon",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11772,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:11.794Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-4634be8be96f82c451ea",
+              "file": "amazon.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "add item to cart on Amazon",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 16320,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:36:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect(firstProduct)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m firstProduct\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \n \u001b[90m 39 |\u001b[39m     \u001b[90m// Wait for product page to load\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 36
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect(firstProduct)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m firstProduct\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \n \u001b[90m 39 |\u001b[39m     \u001b[90m// Wait for product page to load\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:36:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:11.794Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-chromium/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 36
+                      }
+                    },
+                    {
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 1836,
+                      "error": {
+                        "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:29:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 29
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'add item to cart on Amazon'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com/s?k=laptop'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 29
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'add item to cart on Amazon'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com/s?k=laptop'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:29:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-26T07:23:28.911Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 29
+                      }
+                    },
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 1267,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:29:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 29
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'add item to cart on Amazon'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com/s?k=laptop'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 29
+                          },
+                          "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'add item to cart on Amazon'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com/s?k=laptop'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:29:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-26T07:23:31.403Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-chromium-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 29
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-d345a27301abea041521",
+              "file": "amazon.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "navigate Amazon categories",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2627,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Electronics category link not found\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:11.794Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-64e4051c5602fa93ef44",
+              "file": "amazon.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "Amazon login form interaction",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 3118,
+                      "error": {
+                        "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+                        "stack": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 77
+                          },
+                          "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:11.794Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 77
+                      }
+                    },
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1876,
+                      "error": {
+                        "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:73:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 73
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   test(\u001b[32m'Amazon login form interaction'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m     \n \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 73
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   test(\u001b[32m'Amazon login form interaction'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m     \n \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:73:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-26T07:23:15.702Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 73
+                      }
+                    },
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 1342,
+                      "error": {
+                        "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:73:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 73
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   test(\u001b[32m'Amazon login form interaction'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m     \n \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 73
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   test(\u001b[32m'Amazon login form interaction'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m     \n \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:73:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-26T07:23:18.231Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-chromium-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 73
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-a04eebf09c1c73732a75",
+              "file": "amazon.spec.ts",
+              "line": 72,
+              "column": 7
+            },
+            {
+              "title": "search for products on Amazon",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "failed",
+                      "duration": 15472,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#twotabsearchtextbox')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#twotabsearchtextbox')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#twotabsearchtextbox')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#twotabsearchtextbox')\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:12:31",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 31,
+                          "line": 12
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[90m// Search for a product using MCP\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#twotabsearchtextbox'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m searchInput\u001b[33m.\u001b[39mfill(\u001b[32m'laptop'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \n \u001b[90m 15 |\u001b[39m     \u001b[90m// Click search button\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 31,
+                            "line": 12
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#twotabsearchtextbox')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#twotabsearchtextbox')\u001b[22m\n\n\n\u001b[0m \u001b[90m 10 |\u001b[39m     \u001b[90m// Search for a product using MCP\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#twotabsearchtextbox'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m     \u001b[36mawait\u001b[39m expect(searchInput)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m searchInput\u001b[33m.\u001b[39mfill(\u001b[32m'laptop'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \n \u001b[90m 15 |\u001b[39m     \u001b[90m// Click search button\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:12:31\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:11.787Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-search-for-products-on-Amazon-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-search-for-products-on-Amazon-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-search-for-products-on-Amazon-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 31,
+                        "line": 12
+                      }
+                    },
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2742,
+                      "error": {
+                        "message": "Error: page.waitForLoadState: Target page, context or browser has been closed",
+                        "stack": "Error: page.waitForLoadState: Target page, context or browser has been closed\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:8:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m     \n \u001b[90m  7 |\u001b[39m     \u001b[90m// Wait for page to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \n \u001b[90m 10 |\u001b[39m     \u001b[90m// Search for a product using MCP\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#twotabsearchtextbox'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 8
+                          },
+                          "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     \n \u001b[90m  7 |\u001b[39m     \u001b[90m// Wait for page to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \n \u001b[90m 10 |\u001b[39m     \u001b[90m// Search for a product using MCP\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#twotabsearchtextbox'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:8:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-26T07:23:28.805Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-search-for-products-on-Amazon-firefox-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-search-for-products-on-Amazon-firefox-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 8
+                      }
+                    },
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1678,
+                      "error": {
+                        "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"load\" event fired\n============================================================",
+                        "stack": "Error: page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"load\" event fired\n============================================================\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:8:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 8
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  6 |\u001b[39m     \n \u001b[90m  7 |\u001b[39m     \u001b[90m// Wait for page to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \n \u001b[90m 10 |\u001b[39m     \u001b[90m// Search for a product using MCP\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#twotabsearchtextbox'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 8
+                          },
+                          "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"load\" event fired\n============================================================\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     \n \u001b[90m  7 |\u001b[39m     \u001b[90m// Wait for page to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     \n \u001b[90m 10 |\u001b[39m     \u001b[90m// Search for a product using MCP\u001b[39m\n \u001b[90m 11 |\u001b[39m     \u001b[36mconst\u001b[39m searchInput \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#twotabsearchtextbox'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:8:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-26T07:23:32.789Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-search-for-products-on-Amazon-firefox-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 8
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-aed1935f9b2a96a0f0f2",
+              "file": "amazon.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "add item to cart on Amazon",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 20751,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:36:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect(firstProduct)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m firstProduct\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \n \u001b[90m 39 |\u001b[39m     \u001b[90m// Wait for product page to load\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 36
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect(firstProduct)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m firstProduct\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \n \u001b[90m 39 |\u001b[39m     \u001b[90m// Wait for product page to load\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:36:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:11.795Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 36
+                      }
+                    },
+                    {
+                      "workerIndex": 22,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 2097,
+                      "error": {
+                        "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:29:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 29
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'add item to cart on Amazon'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com/s?k=laptop'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 29
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'add item to cart on Amazon'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com/s?k=laptop'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:29:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-26T07:23:33.712Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-firefox-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-firefox-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 29
+                      }
+                    },
+                    {
+                      "workerIndex": 23,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4704,
+                      "error": {
+                        "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"load\" event fired\n============================================================",
+                        "stack": "Error: page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"load\" event fired\n============================================================\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:32:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 32
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 33 |\u001b[39m     \n \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 32
+                          },
+                          "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"load\" event fired\n============================================================\n\n\u001b[0m \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 33 |\u001b[39m     \n \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:32:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-26T07:23:36.771Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-firefox-retry2/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 32
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-51016e529612c312642a",
+              "file": "amazon.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "navigate Amazon categories",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 2163,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Electronics category link not found\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:11.795Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-68a69db003ac3341ad51",
+              "file": "amazon.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "Amazon login form interaction",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 8431,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 77
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:15.369Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-firefox/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 77
+                      }
+                    },
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 1877,
+                      "error": {
+                        "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:73:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 73
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   test(\u001b[32m'Amazon login form interaction'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m     \n \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 73
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 71 |\u001b[39m\n \u001b[90m 72 |\u001b[39m   test(\u001b[32m'Amazon login form interaction'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 73 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgoto(\u001b[32m'https://www.amazon.com'\u001b[39m\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 74 |\u001b[39m     \n \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:73:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-26T07:23:24.911Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-firefox-retry1/video.webm"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-firefox-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 73
+                      }
+                    },
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 2165,
+                      "error": {
+                        "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+                        "stack": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 77
+                          },
+                          "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-26T07:23:27.818Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-firefox-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-firefox-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-firefox-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-1a1dabd6fe6be16e7f95",
+              "file": "amazon.spec.ts",
+              "line": 72,
+              "column": 7
+            },
+            {
+              "title": "search for products on Amazon",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 6,
+                      "status": "passed",
+                      "duration": 8733,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:16.183Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-21f1df223a5837bd1289",
+              "file": "amazon.spec.ts",
+              "line": 4,
+              "column": 7
+            },
+            {
+              "title": "add item to cart on Amazon",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 2266,
+                      "error": {
+                        "message": "Error: page.waitForLoadState: Target page, context or browser has been closed",
+                        "stack": "Error: page.waitForLoadState: Target page, context or browser has been closed\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:32:16",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 16,
+                          "line": 32
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 33 |\u001b[39m     \n \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 16,
+                            "line": 32
+                          },
+                          "message": "Error: page.waitForLoadState: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 30 |\u001b[39m     \n \u001b[90m 31 |\u001b[39m     \u001b[90m// Wait for results to load\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 33 |\u001b[39m     \n \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:32:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:20.186Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-webkit/video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 16,
+                        "line": 32
+                      }
+                    },
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 17091,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:36:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect(firstProduct)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m firstProduct\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \n \u001b[90m 39 |\u001b[39m     \u001b[90m// Wait for product page to load\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 36
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect(firstProduct)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m firstProduct\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \n \u001b[90m 39 |\u001b[39m     \u001b[90m// Wait for product page to load\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:36:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-26T07:23:22.868Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-webkit-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-webkit-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-webkit-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-add-item-to-cart-on-Amazon-webkit-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 36
+                      }
+                    },
+                    {
+                      "workerIndex": 24,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 5617,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:36:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect(firstProduct)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m firstProduct\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \n \u001b[90m 39 |\u001b[39m     \u001b[90m// Wait for product page to load\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 36
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 34 |\u001b[39m     \u001b[90m// Click on first product\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m firstProduct \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-component-type=\"s-search-results\"] .s-result-item h2 a'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m expect(firstProduct)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m firstProduct\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \n \u001b[90m 39 |\u001b[39m     \u001b[90m// Wait for product page to load\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:36:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-26T07:23:40.535Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 36
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-7361dc0083245a5bdcda",
+              "file": "amazon.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "navigate Amazon categories",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3218,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Electronics category link not found\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:24.344Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-bde827528fa40cc990c8",
+              "file": "amazon.spec.ts",
+              "line": 54,
+              "column": 7
+            },
+            {
+              "title": "Amazon login form interaction",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 1796,
+                      "error": {
+                        "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+                        "stack": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 77
+                          },
+                          "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-08-26T07:23:25.108Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 77
+                      }
+                    },
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 6,
+                      "status": "failed",
+                      "duration": 4301,
+                      "error": {
+                        "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+                        "stack": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 77
+                          },
+                          "message": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-08-26T07:23:27.256Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 77
+                      }
+                    },
+                    {
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 11594,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32",
+                        "location": {
+                          "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                          "column": 32,
+                          "line": 77
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                            "column": 32,
+                            "line": 77
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n\n\n\u001b[0m \u001b[90m 75 |\u001b[39m     \u001b[90m// Click on sign in\u001b[39m\n \u001b[90m 76 |\u001b[39m     \u001b[36mconst\u001b[39m signInButton \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m     \u001b[36mawait\u001b[39m expect(signInButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     \u001b[36mawait\u001b[39m signInButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m     \n \u001b[90m 80 |\u001b[39m     \u001b[90m// Wait for login form\u001b[39m\u001b[0m\n\u001b[2m    at /Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts:77:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-08-26T07:23:32.257Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/test-results/amazon-Amazon-Website-Tests-Amazon-login-form-interaction-webkit-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/rishabhjangid/Downloads/taas/taasmerged/packages/deflake/tests/amazon.spec.ts",
+                        "column": 32,
+                        "line": 77
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "884a02874a5c41c56569-82d99500cc207db5380d",
+              "file": "amazon.spec.ts",
+              "line": 72,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-26T07:23:09.660Z",
+    "duration": 36637.558,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}

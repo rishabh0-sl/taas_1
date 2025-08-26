@@ -1,0 +1,22 @@
+{
+  "name": "@ptosmcpllm/combined-api",
+  "version": "1.0.0",
+  "description": "Combined API server for prompt-to-scenario generation and Playwright compilation",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.0",
+    "dotenv": "^16.6.1",
+    "fastify": "^4.24.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

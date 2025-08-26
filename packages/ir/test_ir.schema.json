@@ -1,0 +1,33 @@
+{
+  "suiteId": "string",
+  "cases": [
+    {
+      "id": "string",
+      "name": "string",
+      "description": "string",
+      "steps": [
+        {
+          "action": "goto",
+          "target": "string",
+          "description": "string"
+        },
+        {
+          "action": "expect",
+          "target": "string",
+          "description": "string"
+        },
+        {
+          "action": "fill",
+          "target": "string",
+          "data": "string",
+          "description": "string"
+        },
+        {
+          "action": "click",
+          "target": "string",
+          "description": "string"
+        }
+      ]
+    }
+  ]
+}

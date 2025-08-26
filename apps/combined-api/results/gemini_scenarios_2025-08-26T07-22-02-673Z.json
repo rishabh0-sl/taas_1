@@ -1,0 +1,90 @@
+{
+  "scenarios": [
+    {
+      "id": "scenario_1",
+      "name": "Successful Login",
+      "description": "Verifies a successful login with valid (though weak) credentials.",
+      "steps": [
+        {
+          "action": "goto",
+          "target": "https://www.amazon.com/",
+          "data": null,
+          "description": "Navigate to the Amazon login page"
+        },
+        {
+          "action": "click",
+          "target": "#nav-link-accountList",
+          "data": null,
+          "description": "Click on the 'Accounts & Lists' link to reveal the login area"
+        },
+        {
+          "action": "fill",
+          "target": "#ap_email",
+          "data": "12",
+          "description": "Enter the username"
+        },
+        {
+          "action": "fill",
+          "target": "#ap_password",
+          "data": "12",
+          "description": "Enter the password"
+        },
+        {
+          "action": "click",
+          "target": "#signInSubmit",
+          "data": null,
+          "description": "Click the Sign-In button"
+        },
+        {
+          "action": "expect",
+          "target": "#nav-link-accountList-nav-line-1",
+          "data": "Hello, 12",
+          "description": "Verify successful login by checking for username in the header"
+        }
+      ]
+    },
+    {
+      "id": "scenario_2",
+      "name": "Failed Login - Incorrect Password",
+      "description": "Verifies an error message is displayed when providing an incorrect password.",
+      "steps": [
+        {
+          "action": "goto",
+          "target": "https://www.amazon.com/",
+          "data": null,
+          "description": "Navigate to the Amazon login page"
+        },
+        {
+          "action": "click",
+          "target": "#nav-link-accountList",
+          "data": null,
+          "description": "Click on the 'Accounts & Lists' link to reveal the login area"
+        },
+        {
+          "action": "fill",
+          "target": "#ap_email",
+          "data": "12",
+          "description": "Enter the username"
+        },
+        {
+          "action": "fill",
+          "target": "#ap_password",
+          "data": "123",
+          "description": "Enter an incorrect password"
+        },
+        {
+          "action": "click",
+          "target": "#signInSubmit",
+          "data": null,
+          "description": "Click the Sign-In button"
+        },
+        {
+          "action": "expect",
+          "target": ".a-alert-content",
+          "data": "There was a problem",
+          "description": "Verify that an error message is displayed (partial text match)"
+        }
+      ]
+    }
+  ]
+}

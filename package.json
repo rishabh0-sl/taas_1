@@ -1,0 +1,21 @@
+{
+  "name": "ptosmcpllm-sl2-combined",
+  "version": "1.0.0",
+  "description": "Combined Prompt to Test Scenarios with LLM and Playwright Compiler",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter combined-api dev\" \"pnpm --filter console-ui dev\" \"pnpm --filter backend dev\" \"pnpm --filter deflake web:start\"",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.2.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "data-uri-to-buffer": "^6.0.2"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PRD Intake Schema",
+  "description": "Schema for prompt-to-scenario generation input",
+  "type": "object",
+  "required": ["objective", "url"],
+  "properties": {
+    "objective": {
+      "type": "string",
+      "description": "Test objective description",
+      "minLength": 1
+    },
+    "url": {
+      "type": "string",
+      "description": "Target URL for testing"
+    },
+    "credentials": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "description": "Username for authentication"
+        },
+        "password": {
+          "type": "string",
+          "description": "Password for authentication"
+        },
+        "secretRef": {
+          "type": "string",
+          "description": "Reference to stored secret"
+        }
+      },
+      "anyOf": [
+        {"required": ["username", "password"]},
+        {"required": ["username", "secretRef"]}
+      ]
+    },
+    "runId": {
+      "type": "string",
+      "description": "Optional override for run ID"
+    }
+  }
+}

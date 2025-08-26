@@ -1,0 +1,267 @@
+{
+  "summary": {
+    "totalTests": 26,
+    "passed": 5,
+    "failed": 21,
+    "flaky": 14,
+    "averageSelectorScore": 6.142857142857143
+  },
+  "tests": [
+    {
+      "title": "navigate Amazon categories",
+      "status": "passed",
+      "retries": 0,
+      "selectorScores": [],
+      "duration": 2627
+    },
+    {
+      "title": "navigate Amazon categories",
+      "status": "passed",
+      "retries": 0,
+      "selectorScores": [],
+      "duration": 2163
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 0,
+      "selectorScores": [
+        {
+          "target": "#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button",
+          "method": "descendant",
+          "score": 6,
+          "fallbackUsed": false
+        }
+      ],
+      "failureReason": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+      "duration": 3118
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 1,
+      "selectorScores": [],
+      "failureReason": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "duration": 1876
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 2,
+      "selectorScores": [],
+      "failureReason": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "duration": 1342
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 0,
+      "selectorScores": [],
+      "failureReason": "Error: page.waitForLoadState: Target page, context or browser has been closed",
+      "duration": 2266
+    },
+    {
+      "title": "search for products on Amazon",
+      "status": "passed",
+      "retries": 0,
+      "selectorScores": [],
+      "duration": 11772
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 0,
+      "selectorScores": [
+        {
+          "target": "#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button",
+          "method": "descendant",
+          "score": 6,
+          "fallbackUsed": false
+        }
+      ],
+      "failureReason": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+      "duration": 8431
+    },
+    {
+      "title": "search for products on Amazon",
+      "status": "passed",
+      "retries": 0,
+      "selectorScores": [],
+      "duration": 8733
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 0,
+      "selectorScores": [
+        {
+          "target": "#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button",
+          "method": "descendant",
+          "score": 6,
+          "fallbackUsed": false
+        }
+      ],
+      "failureReason": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+      "duration": 1796
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 1,
+      "selectorScores": [],
+      "failureReason": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "duration": 1877
+    },
+    {
+      "title": "navigate Amazon categories",
+      "status": "passed",
+      "retries": 0,
+      "selectorScores": [],
+      "duration": 3218
+    },
+    {
+      "title": "search for products on Amazon",
+      "status": "failed",
+      "retries": 0,
+      "selectorScores": [
+        {
+          "target": "#twotabsearchtextbox",
+          "method": "element",
+          "score": 7,
+          "fallbackUsed": false
+        }
+      ],
+      "failureReason": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#twotabsearchtextbox')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#twotabsearchtextbox')\u001b[22m\n",
+      "duration": 15472
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 0,
+      "selectorScores": [],
+      "failureReason": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n",
+      "duration": 16320
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 2,
+      "selectorScores": [
+        {
+          "target": "#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button",
+          "method": "descendant",
+          "score": 6,
+          "fallbackUsed": false
+        }
+      ],
+      "failureReason": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+      "duration": 2165
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 1,
+      "selectorScores": [],
+      "failureReason": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "duration": 1836
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 1,
+      "selectorScores": [
+        {
+          "target": "#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button",
+          "method": "descendant",
+          "score": 6,
+          "fallbackUsed": false
+        }
+      ],
+      "failureReason": "Error: expect.toBeVisible: Error: strict mode violation: locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button') resolved to 3 elements:\n    1) <div class=\"nav-div\" id=\"nav-link-accountList\">…</div> aka locator('#nav-link-accountList')\n    2) <a data-nav-role=\"signin\" class=\"nav-action-signin-button\" data-nav-ref=\"nav_custrec_signin\" href=\"https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0\">…</a> aka getByRole('link', { name: 'Sign in', exact: true })\n    3) <a class=\"nav-a\" aria-label=\"New to Amazon? Start here to create an account\" href=\"https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_custrec_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth…>Start here.</a> aka getByRole('link', { name: 'New to Amazon? Start here to' })\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+      "duration": 4301
+    },
+    {
+      "title": "search for products on Amazon",
+      "status": "failed",
+      "retries": 1,
+      "selectorScores": [],
+      "failureReason": "Error: page.waitForLoadState: Target page, context or browser has been closed",
+      "duration": 2742
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 2,
+      "selectorScores": [],
+      "failureReason": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "duration": 1267
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 0,
+      "selectorScores": [],
+      "failureReason": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n",
+      "duration": 20751
+    },
+    {
+      "title": "search for products on Amazon",
+      "status": "failed",
+      "retries": 2,
+      "selectorScores": [],
+      "failureReason": "Error: page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"load\" event fired\n============================================================",
+      "duration": 1678
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 1,
+      "selectorScores": [],
+      "failureReason": "Error: page.goto: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - navigating to \"https://www.amazon.com/s?k=laptop\", waiting until \"domcontentloaded\"\u001b[22m\n",
+      "duration": 2097
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 1,
+      "selectorScores": [],
+      "failureReason": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n",
+      "duration": 17091
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 2,
+      "selectorScores": [],
+      "failureReason": "Error: page.waitForLoadState: Target page, context or browser has been closed\n=========================== logs ===========================\n  \"load\" event fired\n============================================================",
+      "duration": 4704
+    },
+    {
+      "title": "Amazon login form interaction",
+      "status": "failed",
+      "retries": 2,
+      "selectorScores": [
+        {
+          "target": "#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button",
+          "method": "descendant",
+          "score": 6,
+          "fallbackUsed": false
+        }
+      ],
+      "failureReason": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\nExpected: visible\nReceived: <element(s) not found>\nTimeout:  10000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('#nav-link-accountList, #nav-signin-tooltip a, .nav-action-button')\u001b[22m\n",
+      "duration": 11594
+    },
+    {
+      "title": "add item to cart on Amazon",
+      "status": "failed",
+      "retries": 2,
+      "selectorScores": [],
+      "failureReason": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m failed\n\nLocator:  locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\nExpected: visible\nReceived: <element(s) not found>\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-component-type=\"s-search-results\"] .s-result-item h2 a').first()\u001b[22m\n",
+      "duration": 5617
+    }
+  ],
+  "recommendations": [
+    "High flakiness detected - review test isolation and wait strategies",
+    "Failed tests detected - review error messages and selector strategies"
+  ]
+}
