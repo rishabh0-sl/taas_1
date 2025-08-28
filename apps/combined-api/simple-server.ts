@@ -24,7 +24,7 @@ const CompilationRequestSchema = z.object({
 });
 
 // Environment variables
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'AIzaSyDP1u8Ba-XHL5as5jR_i5UKwaAkKTRaKT8';
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || 'gemini_key';
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-pro';
 const GEMINI_BASE_URL = process.env.GEMINI_BASE_URL || 'https://generativelanguage.googleapis.com';
 
