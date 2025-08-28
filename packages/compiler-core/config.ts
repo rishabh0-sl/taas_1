@@ -12,7 +12,7 @@ export interface AppConfig {
 
 export const config: AppConfig = {
   gemini: {
-    apiKey: process.env.GEMINI_API_KEY || 'AIzaSyDbuGpVxodEovGtXhUJ5bi6BrGRPf_HStQ',
+    apiKey: process.env.GEMINI_API_KEY || 'gemini_key',
     model: process.env.GEMINI_MODEL || 'gemini-1.5-flash',
     baseUrl: process.env.GEMINI_BASE_URL || 'https://generativelanguage.googleapis.com'
   },
